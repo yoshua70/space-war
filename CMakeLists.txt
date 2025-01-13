@@ -9,6 +9,9 @@ project(
 # Your LSP might need this to locate header files and provide proper support
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# Add Catch2 modules to assist in development
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
 # Only do this if it is the main project, and not if it is included through
 # `add_subdirectory`
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
