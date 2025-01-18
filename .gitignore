@@ -33,3 +33,5 @@
 
 # Make build directory
 build/
+
+.cache/
