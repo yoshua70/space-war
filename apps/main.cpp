@@ -1,7 +1,9 @@
-#include <iostream>
+#include "game_lib/Game.hpp"
 
 int main(int argc, char* argv[]) {
-    std::cout << "Hello, world !" << std::endl;
+    Game g("config file path...");
+
+    g.run();
 
     return 0;
 }
